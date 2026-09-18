@@ -30,21 +30,23 @@ It also provides specific suggestions to help improve the password.
 
 ## How It Works
 The analyzer assigns a score based on five criteria:
- Criteria                      Score 
 
- At least 8 characters            +1 
- Contains uppercase letter        +1 
- Contains lowercase letter        +1 
- Contains a number                +1 
- Contains a special character     +1 
+At least 8 characters         -   +1 
 
-The final score determines the password strength:
- Score  Strength    
- 
-   0–2  Weak        
-     3  Medium      
-     4  Strong      
-     5  Very Strong 
+Contains uppercase letter     -   +1 
+
+Contains lowercase letter     -   +1 
+
+Contains a number             -   +1 
+
+Contains a special character  -   +1 
+
+The final score determines the password strength: 
+
+   0–2 -  Weak        
+     3 - Medium      
+     4 - Strong      
+     5 - Very Strong 
 
 ### Common Password Detection
 Before performing the regular strength checks, the program compares the password against a list of commonly used passwords such as:
